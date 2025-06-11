@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #6c63ff;
+      --accent-color: #f7f7ff;
+      --secondary-color: #e0e7ff;
+      --text-dark: #2c3e50;
+      --text-muted: #6c757d;
+    }
+
+    body {
+      padding-top: 70px;
+      background-color: var(--accent-color);
+      color: var(--text-dark);
+      font-family: 'Indie Flower', cursive;
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #dcdafc !important;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+    }
+
+    .side-content {
+      background-color: var(--secondary-color);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-top {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .btn-success {
+      background-color: #00b894;
+      border: none;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 30px 0;
+      margin-top: 60px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Canva</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#image">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="container mt-5">
+  <div class="row align-items-start">
+    <div class="col-lg-8">
+      <h1>Welcome to Your Go-To Guide for Canva!</h1>
+      <p class="text-muted">
+        Hey there! 👋 Whether you're a total beginner or just looking to step up your design game, you’re in the right place. Canva is one of the easiest (and most fun!) ways to create beautiful designs — no fancy software or design degree needed. From Instagram posts to resumes, business cards to birthday invites — Canva makes it possible for anyone to design anything.
+      </p>
+
+      <!-- Hero Image -->
+      <img src="num1.jpeg" class="img-fluid rounded-4 my-4" alt="Design Hero Image" />
+
+      <div class="mt-4">
+        <h3>Canva</h3>
+        <p class="text-muted">A Canva-inspired design with a clean layout, drag-and-drop editor, smart tool panels, real-time collaboration, and mobile-friendly interface.</p>
+      </div>
+    </div>
+
+    <!-- Sidebar with Q&A -->
+    <div class="col-lg-4 side-content mt-4 mt-lg-0">
+      <div class="mb-4">
+        <h5>🧐 Just Getting Started with Canva?</h5>
+        <p class="text-muted mb-2">
+          If you’re new to Canva, don’t worry you don’t need to be a designer to make things look amazing.
+          Start with a template, drag and drop what you need, and customize it with your own colors and fonts. It’s seriously that simple. You’ll be creating beautiful stuff in no time!
+        </p>
+        <img src="rrr.jpeg" class="img-fluid rounded" alt="Getting Started with Canva" />
+      </div>
+
+      <div class="mb-4">
+        <h5>🤝 Canva Is Awesome for Teamwork</h5>
+        <p class="text-muted mb-2">
+You can invite your team to edit designs together , leave comments right on the canvas, and even plan and schedule social media posts without leaving the app. Total game changer for group projects or small businesses!</p>
+        <img src="nye.jpeg" class="img-fluid rounded" alt="Team Collaboration in Canva" />
+      </div>
+
+      <div class="mb-2">
+        <h5>🔍 Cool Canva Features You Might’ve Missed</h5>
+        <p class="text-muted mb-2">
+Canva has some neat hidden gems. Need to post your design in a bunch of sizes? Use Magic Resize. Want to remove a background in one click? There's a tool for that. Feeling creative? Try text effects like neon or curved text to instantly add flair. Let me know if you want it to sound more formal, playful, or tailored for a specific audience!
+
+        </p>
+        <img src="rl.png" class="img-fluid rounded" alt="Canva Pro Features" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Section (Carousel) -->
+<section id="image" class="container mt-5">
+  <h2>Gallery</h2>
+  <p class="text-muted"></p>
+
+  <div id="carouselGallery" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner rounded-4 shadow-sm">
+      <div class="carousel-item active">
+        <img src="num4.png" class="d-block w-100" alt="Visual 1">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-light bg-dark bg-opacity-50 rounded px-3 py-1 d-inline-block">Bright and appealing visuals enhance user engagement.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="num2.jpeg" class="d-block w-100" alt="Visual 2">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-light bg-dark bg-opacity-50 rounded px-3 py-1 d-inline-block">Aesthetic layouts improve content retention.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="num3.webp" class="d-block w-100" alt="Visual 3">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-light bg-dark bg-opacity-50 rounded px-3 py-1 d-inline-block">Accessible and descriptive content supports usability.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container mt-5">
+  <h2>Contact Us</h2>
+  <p class="text-muted">We’d love to hear from you. Reach out anytime!</p>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control rounded-3" id="name" placeholder="Your Name" />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control rounded-3" id="email" placeholder="Email" />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control rounded-3" id="message" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- Login Section -->
+<section id="login" class="container mt-5 mb-5">
+  <h2>Login</h2>
+  <p class="text-muted">Secure and simple access to your account.</p>
+  <form>
+    <div class="mb-3">
+      <label for="loginEmail" class="form-label">Email</label>
+      <input type="email" class="form-control rounded-3" id="loginEmail" placeholder="Username" />
+    </div>
+    <div class="mb-3">
+      <label for="loginPassword" class="form-label">Password</label>
+      <input type="password" class="form-control rounded-3" id="loginPassword" placeholder="Password" />
+    </div>
+    <button type="submit" class="btn btn-success">Login</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Canva, All Right Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
